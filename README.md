@@ -11,7 +11,7 @@
 
 ## ③DEMO
 
-ftp://docomo-tech-tkn@docomo-tech-tkn.sakura.ne.jp/home/docomo-tech-tkn/www/01_HTMLCSS
+https://docomo-tech-tkn.sakura.ne.jp/01_HTMLCSS/html_name_00/index.html
 
 ## ④作ったアプリケーション用のIDまたはPasswordがある場合
 
