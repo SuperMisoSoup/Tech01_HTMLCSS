@@ -1,0 +1,325 @@
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+  background-image: url("../img/cheeeese.png");
+  background-color:rgba(255, 255, 255, 0.9);
+  background-blend-mode:lighten;
+  background-size: 5%;
+}
+
+h1{
+  font-size: 3rem;
+  font-weight: bold;
+  margin: 0 0 30px 0;
+}
+
+h2{
+  font-size: 2.2rem;
+}
+
+.h3 {
+  color: #222222;
+  font-size: 24px;
+  font-weight: bold;
+  font-family: system-ui;
+}
+
+h4 {
+  font-size: 18px;
+  font-family: system-ui;
+}
+
+h5 {
+  font-size: 16px;
+  font-family: system-ui;
+  line-height: 25px;
+}
+
+.Yellow {
+  color: #ffd61a;
+  font-size: 24px;
+  font-weight: bold;
+  font-family: system-ui;
+}
+
+.Button,
+a.Button {
+  margin: auto; /*ボタン位置*/
+  display: flex; /*文字自由調整*/
+  justify-content: center; /*左右*/
+  align-items: center; /*上下*/
+  color: #fff;
+  background-color: #ffd61a;
+  height: 60px;
+  width: 300px;
+  border-bottom: 5px solid #ccc100;
+  border-radius: 5px;
+}
+.Button:hover,
+a.Button:hover {
+  margin-top: 3px;
+  color: #fff;
+  background: #f9b916;
+  border-bottom: 2px solid #ccc100;
+}
+/* ================全体================ */
+.br_16px {
+  padding: 8px 0;
+}
+.br_24px {
+  padding: 12px 0;
+}
+.br_30px {
+  padding: 15px 0;
+}
+.br_40px {
+  padding: 20px 0;
+}
+.br_60px {
+  padding: 30px 0;
+}
+.br_80px {
+  padding: 40px 0;
+}
+
+/* ================余白================ */
+
+.header {
+  display: flex; /* 画像とテキスト横並び */
+  background: #ffffff
+}
+
+.header_logo {
+  margin: 20px 0 0 40px; /* 画像マージン */
+}
+
+.nav {
+  margin: 0 0 0 auto; /* テキスト全体右寄せ */
+}
+.nav-item {
+  display: inline-block; /* テキスト横並び */
+  margin: 50px 50px 50px 0; /* テキスト単体のマージン */
+}
+/* ================ヘッダー================ */
+
+.Img {
+  width: 100%;
+  height: auto;
+}
+
+.MainText {
+  position: absolute;
+  color: #ffffff;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+}
+
+.BigImg #MainText2 {
+  /*チーズ職人養成学校「チーズアカデミーTOKYO」*/
+  font-size: 1.6rem;
+}
+/* ================ビッグピクチャ================ */
+
+@keyframes infinity-scroll-Right {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
+.scroll-infinity__wrap {
+  display: flex;
+  overflow: hidden;
+}
+.scroll-infinity__list {
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+.scroll-infinity__list--Right {
+  animation: infinity-scroll-Right 30s infinite linear 0.5s both;
+}
+.scroll-infinity__item {
+  width: calc(100vw / 4);
+}
+.scroll-infinity__item > img {
+  width: 100%;
+}
+/* ========スクロール======== */
+/* ================ABOUT================ */
+
+.box{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 1100px;
+  background: #f6f3e9;
+  margin: 0 auto;
+}
+
+.box_text{
+  width: 550px;
+  margin: 0 0 0 50px;
+  line-height: 25px;
+}
+
+.box_text_reverse{
+  width: 550px;
+  margin: 0 50px 0 60px;
+  line-height: 25px;
+}
+
+@media screen and (max-width:1200px){
+  .box {
+    display: block;
+  }
+}
+
+.reverse{
+  flex-direction: row-reverse;
+}
+
+/* ================COURSE================ */
+
+.NEWS_Flexbox {
+  display: flex;
+  justify-content: center;
+}
+
+.NEWS_item {
+  margin: 15px;
+  width: 300px;
+  background: #fcf6cc;
+}
+
+.NEWS_item:hover,
+a.NEWS_item:hover {
+  color: #000000;
+  background: #ffd51a52;
+}
+
+/* ================NEWS================ */
+
+.ACCESS{
+  width: 100%;
+  background: #fbfaf6;
+}
+
+.ACCESS_flexbox{
+  display: flex;
+  justify-content: center;
+}
+
+.ACCESS_item1{
+  text-align: left; /* テキスト左寄せ */
+  
+}
+.ACCESS_item2{
+  padding: 0 0 0 64px;
+  text-align: left; /* テキスト左寄せ */
+}
+
+/* ================ACCESS================ */
+
+.Table {
+  width: 700px;
+  margin: 0 auto;
+  background: #ffffff
+}
+.contact-item,
+.contact-body {
+  border: 1px solid #bfbfbf;
+  height: 36px;
+}
+
+.contact-item {
+  text-align: left; /* テキスト左寄せ */
+  vertical-align: top; /* テキスト上寄せ */
+  width: 240px;
+  padding: 20px 64px 20px 20px;
+}
+
+.contact-body {
+  width: 600px;
+  padding: 20px 20px 20px 20px;
+}
+
+
+.form-text {
+  width: 90%;
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+/* ========テキストボックス======== */
+
+.form-select {
+  width: 95%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+/* ========プルダウン======== */
+
+.contact-skill {
+  display: block;
+}
+
+.contact-skill + .contact-skill {
+  margin-top: 24px;
+}
+
+.contact-skill-txt {
+  margin-left: 15px;
+}
+/* ========選択肢======== */
+
+.form-textarea {
+  width: 90%;
+  padding: 10px;
+  height: 200px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+/* ========テキストエリア======== */
+/* ================CONTACT================ */
+
+.footer {
+  bottom: 0; /*下に固定*/
+  width: 100%;
+  background-color: #707070;
+  color: #fff;
+  text-align: center;
+  margin: 140px 0 0 0;
+  padding: 30px 0;
+}
+/* ================フッター================ */
+
+
+.page_top_btn {
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  font-weight: bold;
+  padding: 1em;
+  text-align: center;
+  background-color: #ffd61a;
+  color: #fff;
+  }
+
+  /* マウスオーバー時 */
+  .page_top_btn:hover {
+  background: #f9b916;
+  color: #eee;
+  }
+
+  /* ================トップへ戻るボタン================ */
